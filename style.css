@@ -80,7 +80,17 @@ body{
     right: 0;
     top: 64px;
     position: absolute;
+    animation: rotate 10s linear infinite;
 }
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 .description{
     background-color: white;
@@ -124,6 +134,58 @@ body{
     font-weight: 600;
     font-size: 24px;
 }
+
+.feynman{
+    min-height: 790px;
+    background-image: url(image/feynman.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size:867px 637px;
+    position: relative;
+    width: 100%;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f2f2f2;
+
+
+}
+
+.feynman__title{
+    width: 60%;
+    text-align: center;
+    align-self: center;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 600;
+    z-index: 1;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.feynman__subtitle{
+    align-self: center;
+    color: rgb(0, 0, 0);
+    line-height: 34px;
+    font-size: 24px;
+    z-index: 1;
+    margin: 0;
+}
+
+.feynman__link{
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    color: #2f80ed;
+    text-decoration: none;
+    line-height: 51px;
+    font-size: 36px;
+}
+
 
 .kaufman{
     position: relative;
@@ -201,6 +263,8 @@ body{
     transform: rotate(35deg);
     right: -80px;
     top: -60px;
+    animation: rotate 10s linear infinite;
+
 }
 
 .footer{
@@ -213,7 +277,6 @@ body{
 .footer__author{
     margin: 0;
     padding: 18px 0 18px;
-    /* width: 90%; */
     color: white;
     font-family:'Helvetica Neue', 'Arial', sans-serif;
 }
