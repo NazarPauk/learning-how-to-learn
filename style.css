@@ -13,6 +13,28 @@ body{
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+
+.title{
+    width: 60%;
+    text-align: center;
+    align-self: center;
+    overflow: hidden;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.subtitle{
+    text-align: center;
+    align-self: center;
+    line-height: 34px;
+    font-size: 24px;
+    margin: 0;
+    width: 60%;
+}
+
+
 .logo{
     width:143px ;
     height:32px ;
@@ -32,6 +54,8 @@ body{
     background-image: url(image/logo_place_footer.png);
 }
 
+
+/* Header */
 .header {
     height: 100vh;
     min-height: 600px;
@@ -41,6 +65,7 @@ body{
     position: relative;
     padding:0 0 0 64px ;
     background-color: #f2f2f2;
+    overflow: hidden;
 }
 
 .header__title{
@@ -80,9 +105,10 @@ body{
     right: 0;
     top: 64px;
     position: absolute;
-    animation: rotate 10s linear infinite;
+    animation: rotate 20s linear infinite;
 }
 
+/* Animation in sections: header, kaufman*/
 @keyframes rotate {
     0% {
       transform: rotate(0deg);
@@ -92,15 +118,15 @@ body{
     }
   }
 
-.description{
-    background-color: white;
-}
+/*********/
 
+/* Oakley */
 .oakley{
     background-color: #f2f2f2;
 }
+/*********/
 
-
+/*Description*/
 .two-columns{
     display: flex;
     width: 80%;
@@ -135,21 +161,71 @@ body{
     font-size: 24px;
 }
 
+/*********/
+
+
+/* Techniques */
+
+.techniques{
+    width: 80%;
+    height: auto;
+    padding: 100px 0;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.cards{
+    width:920px ;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(240px,auto));
+    grid-template-rows: auto;
+    column-gap: 100px;
+}
+
+.cards__image{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 60px 40px 43px 40px ;
+}
+
+.cards__title{
+    margin: 0;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.cards__description{
+    margin: 0;
+    text-align: center;
+    line-height:23px;
+    font-size: 18px;
+}
+
+
+/**************/
+
+/* Feynman */
 .feynman{
     min-height: 790px;
     background-image: url(image/feynman.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size:867px 637px;
+    background-color: #f2f2f2;
     position: relative;
     width: 100%;
     display: flex ;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    background-color: #f2f2f2;
-
-
 }
 
 .feynman__title{
@@ -186,6 +262,9 @@ body{
     font-size: 36px;
 }
 
+/**************/
+
+/* Kaufman */
 
 .kaufman{
     position: relative;
@@ -202,8 +281,8 @@ body{
 
 .table{
     width: 80%;
-    display: flex ;
-    flex-wrap: wrap;
+    display: grid ;
+    grid-template-columns: repeat(5,auto);
     justify-content: space-between;
     margin: 0 auto;
     z-index: 1;
@@ -217,31 +296,25 @@ body{
 
 }
 
+.techniques__title{
+    color: black;
+    padding-bottom: 20px;
+}
+
+.techniques__subtitle{
+    color: black;
+}
+
+
 .section-title{
-    width: 60%;
-    text-align: center;
-    align-self: center;
-    overflow: hidden;
     color: white;
-    line-height: 1.15;
-    font-size: 60px;
-    font-weight: 600;
     z-index: 1;
-    margin: 0;
-
-
 }
 
 .section-subtitle{
-    align-self: center;
     color: white;
-    line-height: 34px;
-    font-size: 24px;
     z-index: 1;
-    margin: 0;
     padding: 24px 0;
-
-
 }
 
 .table__heading{
@@ -263,9 +336,63 @@ body{
     transform: rotate(35deg);
     right: -80px;
     top: -60px;
-    animation: rotate 10s linear infinite;
+    animation: rotate 20s linear infinite;
 
 }
+
+/**************/
+
+/* Resources */
+
+.resources{
+    width: 100%;
+    height: auto;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resources__title{
+    color: black;
+    padding: 100px 0 20px 0;
+}
+
+.resources__subtitle{
+    color: black;
+    padding-bottom: 80px;
+}
+
+.resources__logo-zone{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    margin:0;
+    list-style: none;
+    padding: 0;
+    width: 1100px;
+    height: auto;
+    padding-bottom: 217px ;
+    align-self: center;
+
+}
+
+.resources__link{
+    margin: 0;
+    height: 38px;
+}
+
+.resources__logo{
+    height: 38px;
+    width: 270px;
+}
+
+.link_transformation_hover:hover {
+  opacity: .6;
+  transition: opacity .3s ease;
+}
+
+/**************/
+
+/* Footer */
 
 .footer{
     background-color: #1f1f1f;
@@ -288,5 +415,8 @@ body{
     max-width: 1100px;
     display: flex;
 }
+
+/**************/
+
 
 
