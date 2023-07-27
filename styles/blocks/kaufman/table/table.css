@@ -1,0 +1,10 @@
+.table{
+    width: 80%;
+    display: grid ;
+    grid-template-columns: repeat(5,auto);
+    justify-content: space-between;
+    margin: 0 auto;
+    z-index: 1;
+    list-style: none;
+    padding-inline-start: 0;
+}
