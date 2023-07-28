@@ -1,4 +1,4 @@
-@import url(styles/normalize.css);
+@import url(normalize.css);
 
 /* header */
 @import url(blocks/header/header.css);
