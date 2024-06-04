@@ -3,26 +3,26 @@
 [GitHub Pages](https://github.com/NazarPauk)
 ### Sprint links:
 
-[First](https://puckfutin.notion.site/Sprint-1-368484eea2fb4e6fb19dd60e946f3a84)
+[First](https://palianytsia.notion.site/Sprint-1-368484eea2fb4e6fb19dd60e946f3a84)
 
-[Second](https://puckfutin.notion.site/Sprint-2-e65508d67f8744838c778645b3eb0e0a)
+[Second](https://palianytsia.notion.site/Sprint-2-e65508d67f8744838c778645b3eb0e0a)
 
-[Third](https://puckfutin.notion.site/Sprint-3-c78d5c9d7028451f8383535a6a976c26)
+[Third](https://palianytsia.notion.site/Sprint-3-c78d5c9d7028451f8383535a6a976c26)
 
 
 ## Description
 A site that consists of one page and links to other useful sources talks about different methods of study:
 
-"The project was created in order to practice the studied knowledge of the development team in  [Palianytsia Game Dev Studio](https://pgds.xyz/)"
+"The project was created in order to practice the studied knowledge of the development team in  [Palianytsia Foundation](https://pgds.xyz/)"
 
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/NazarPauk/Sprint2-learning-how-to-learn.git
+git clone https://github.com/NazarPauk/learning-how-to-learn.git
 # Enter the project directory
-cd Sprint2-learning-how-to-learn
+cd learning-how-to-learn
 ```
 
 ## Topics
