@@ -1,0 +1,12 @@
+.product___text{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 0;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Обмежує кількість рядків до двох */
+  overflow: hidden; /* Приховує текст, що виходить за межі */
+  text-overflow: ellipsis; /* Додає три крапки в кінці */
+}

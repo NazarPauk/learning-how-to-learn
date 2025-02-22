@@ -1,0 +1,14 @@
+.header__menu-list{
+    display: none;
+}
+
+/* Десктопи та великі планшети (від 1024px) */
+@media (min-width: 1024px) {
+    .header__menu-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 15px;
+    }
+}

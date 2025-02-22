@@ -1,0 +1,11 @@
+.header__burger-menu{
+    width: 30px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.header__burger-menu:hover{
+    color: orange;
+}

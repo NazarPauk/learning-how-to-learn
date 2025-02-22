@@ -2,149 +2,134 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pages/index.css">
+    <title>Saturami | Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-    <title>Learning how to learn</title>
+    <link rel="stylesheet" href="pages/index.css">
 </head>
 <body>
-    <div class="page">
-        <header class="header">
-            <div class="logo logo_place_header"></div>
-            <h1 class="header__title">Learning How to Learn</h1>
-            <p class="header__subtitle">the most effective cutting-edge learning techniques that you can apply to your daily life <a class="header__link link" href="#">Learn more →</a></p>
-            <img src="image/header-image.png" alt="" class="header__main-illustration">
-            <div class="header__square-pic"></div>
-        </header>
-        <main>
-            <section class="description">
-                <div class="two-columns">
-                    <h3 class="two-columns__brief">The main problem with education</h3>
-                    <div class="two-columns__main-text">
-                        <p class="two-columns__paragraph">Whether it's at school or university, the one thing no one ever teaches you is how to teach yourself. We often just end up drilling specific exercises and mindlessly memorizing information so that when exam time comes around, we pass the test. But once the test is over, that information has outlived its usefulness, and there's no guarantee that information will be retained. In the end, we're really just learning how to pass our tests.</p>
-                        <p class="two-columns__paragraph"><span class="two-columns__span-accent">Here's the real question:</span> does this approach of repetition and memorization help us truly understand the subject material? The academic consensus nowadays is that it doesn't. In fact, what's more important than any individual topic is knowing how to study, but for some reason, this point is often overlooked. So, what can we do to remedy this?</p>
-                        <p class="two-columns__paragraph">Well, there are various techniques and exercises that can be applied to the educational process to help make it more efficient and engaging. Keep scrolling to uncover some of the secrets of effective learning.</p>
+    <header class="header">
+        <div class="header__container">
+            <a href="" class="logo">
+                <img class="logo__img" src="images/header-logo.png" alt="">
+                <span class="logo__text">Saturami</span>
+            </a>
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">New</li>
+                    <li class="header__menu-item">Sale</li>
+                    <li class="header__menu-item">Popular</li>
+                </ul>
+                <svg class="header__burger-menu" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs>
+                </svg>    
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <form class="search" action="/search" method="GET" role="search">
+            <input 
+              class="search__input"
+              type="search" 
+              id="search-input" 
+              name="q" 
+              placeholder="Введіть назву товару..." 
+              aria-label="Пошук товарів" 
+              required
+            >
+            <button class="search__button" type="submit">🔍</button>
+          </form>
+          <section class="main__products">
+            <div class="product">
+                <img src="images/product-1.jpeg" alt="" class="product__img">
+                <div class="product__info">
+                    <h3 class="product__title">
+                        SoundPro X500
+                    </h3>
+                    <div class="product__description">
+                        <p class="product___text">
+                            These headphones have an ergonomic design with soft ear cushions that provide comfort even during long periods of use. The built-in microphone allows you to communicate seamlessly during calls or use voice assistants. In addition, they are equipped with a battery that provides up to 20 hours of continuous use, making them ideal for traveling or long trips.
+                        </p>
                     </div>
+                    <span class="product__price">Price: 145$
+                    </span>
                 </div>
-            </section>
-
-            <section class="techniques">
-                <h2 class="techniques__title  title">Learning Techniques</h2>
-                <p class="techniques__subtitle subtitle">Five Strategies from Barbara Oakley</p>
-                <ul class="cards">
-                    <li class="cards__item">
-                        <img src="image/cards-attention.png" alt="" class="cards__image">
-                        <h3 class="cards__title">Two Ways of Thinking</h3>
-                        <p class="cards__description">Deep understanding comes from being able to toggle back and forth between focused and diffused thinking.</p>
-                    </li>
-                    <li class="cards__item">
-                        <img src="image/cards-recall.png" alt="" class="cards__image">
-                        <h3 class="cards__title">Recall</h3>
-                        <p class="cards__description">Improving your ability to remember key bits of information helps to connect different parts of the brain.</p>
-                    </li>
-                    <li class="cards__item">
-                        <img src="image/cards-interliving.png" alt="" class="cards__image">
-                        <h3 class="cards__title">Interleaving</h3>
-                        <p class="cards__description">When you learn multiple skills at the same time, they reinforce each other.</p>
-                    </li>
-                    <li class="cards__item">
-                        <img src="image/cards-question.png" alt="" class="cards__image">
-                        <h3 class="cards__title">Questions</h3>
-                        <p class="cards__description">When listening to your teacher, think up a good question, something that you're really itching to know.</p>
-                    </li>
-                    <li class="cards__item">
-                        <img src="image/cards-competence.png" class="cards__image">
-                        <h3 class="cards__title">Illusion of Competence</h3>
-                        <p class="cards__description">Test yourself, write it down, tell other people, and repeat the process in different settings. Only then can you be truly certain you've understood something.</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="oakley">
-                <div class="two-columns">
-                    <h3 class="two-columns__brief">Barbara Oakley’s story.</h3>
-                    <div class="two-columns__main-text">
-                        <p class="two-columns__paragraph">Math didn't come naturally to Barbara in childhood. She thought of herself as more of a humanities person, and not a brilliant one at that. With an eye to becoming a linguist, after school she enlisted in the army, who sent her to learn russian. After several years of service, during which she rose to the rank of Captain, Barbara left the army and decided to study engineering. In was during this time that she developed her learning methodology as she was forced to reprogram her brain for a different kind of learning. It turns out that when something doesn't come naturally to you, having to work hard to gain the knowledge that other people may get at first glance gives you a deeper, more comprehensive understanding of the subject matter.</p>
+                <button class="product__buy-btn">
+Buy
+                </button>
+            </div>
+            <div class="product">
+                <img src="images/product-2.jpeg" alt="" class="product__img">
+                <div class="product__info">
+                    <h3 class="product__title">
+                        AudioPro M5
+                    </h3>
+                        
+                    <div class="product__description">
+                        <p class="product___text">
+                            The microphone is equipped with a high-quality capsule that provides clear and detailed sound without distortion even at high volume levels. Its metal housing design ensures reliability and durability, and the adjustable stand allows you to set the optimal angle.
+                        </p>
                     </div>
+                    <span class="product__price">Price: 59$
+
+                    </span>
                 </div>
-            </section>
+                <button class="product__buy-btn">
+Buy
+                </button>
+            </div>
+            <div class="product">
+                <img src="images/product-3.webp" alt="" class="product__img">
+                <div class="product__info">
+                    <h3 class="product__title">
+                        PrintMaster 200
+                    </h3>
+                    <div class="product__description">
+                        <p class="product___text">
+                            The PrintMaster 200 is equipped with state-of-the-art wireless connectivity, allowing you to print directly from laptops, smartphones and tablets via Wi-Fi or Bluetooth. Its print speeds of up to 20 pages per minute make printing fast and efficient, and its low noise level ensures a comfortable working environment.
+                        </p>
+                    </div>
+                    <span class="product__price">Price: 17$
 
-            <section class="feynman">
-                <h2 class="feynman__title ">The Feynman Technique</h2>
-                <p class="feynman__subtitle ">Learn without forgetting</p>
-                <a href="https://fs.blog/feynman-learning-technique/" class="feynman__link link">More →</a>
-            </section>
+                    </span>
+                </div>
+                <button class="product__buy-btn">
+Buy
+                </button>
+            </div>
 
-            <section class="kaufman">
-                <img src="image/kaufman-triangle.svg" alt="" class="kaufman__triangle">
 
-                <h2 class="kaufman__title title">Ten principles of rapid skill acquisition</h2>
-                <p class="kaufman__subtitle subtitle">by Josh Kaufman</p>
-                <ul class="table">
-                    <li class="table__cell">
-                        <h4 class="table__heading">1</h4>
-                        <p class="table__text">Choose a lovable project</p>
-                    </li>
-                    <li class="table__cell">
-                        <h4 class="table__heading">2</h4>
-                        <p class="table__text">Focus your energy on one skill at a time</p>
-                    </li>
-                    <li class="table__cell">
-                        <h4 class="table__heading">3</h4>
-                        <p class="table__text">Define your target performance level</p>
-                    </li>
-                    <li class="table__cell">
-                        <h4 class="table__heading">4</h4>
-                        <p class="table__text">Deconstruct the skill into sub-skills</p>
-                    </li>
-                    <li class="table__cell">
-                        <h4 class="table__heading">5</h4>
-                        <p class="table__text">Obtain critical tools</p>
-                    </li>
-                    <li class="table__cell">
-                        <h4 class="table__heading">6</h4>
-                        <p class="table__text">Eliminate barriers to practice</p>
-                    </li>
-                    <li class="table__cell">
-                        <h4 class="table__heading">7</h4>
-                        <p class="table__text">Make dedicated time for practice</p>
-                    </li>
-                    <li class="table__cell">
-                        <h4 class="table__heading">8</h4>
-                        <p class="table__text">Create fast feedback loops</p>
-                    </li>
-                    <li class="table__cell">
-                        <h4 class="table__heading">9</h4>
-                        <p class="table__text">Practice by the clock in short bursts</p>
-                    </li>
-                    <li class="table__cell">
-                        <h4 class="table__heading">10</h4>
-                        <p class="table__text">Emphasize quantity and speed</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="resources">
-                <h2 class="resources__title title">Useful resources</h2>
-                <p class="resources__subtitle subtitle">Further materials on learning techniques and hacks.</p>
-                <ul class="resources__logo-zone">
-                    <li class="resources__link link"><a href="https://ed.ted.com/search?qs=learning+techniques+and+hacks"><img class="resources__logo" src="image/resources-tedED.png" alt=""></a></li>
-                    <li class="resources__link link"><a href="https://knottedbrains.medium.com/top-learning-hacks-to-learn-more-efficiently-effectively-e076989986bb" class="resources__logo "><img class="resources__logo link_transformation_hover" src="image/resources-Medium.png" alt=""></a></li>
-                    <li class="resources__link link"><a href="https://www.dezeen.com/"><img class="resources__logo " src="image/resources-dezeen.png" alt=""></a></li>
-                    <li class="resources__link link"><a href="https://www.goodreads.com/book/show/49537956-studying-techniques" ><img class="resources__logo" src="image/resources-goodreads.png" alt=""></a></li>
-                </ul>
-            </section>
-        </main>
-
+          </section>
+    </main>
     <footer class="footer">
-        <section class="footer__content">
-            <div class="logo logo_place_footer"></div>
-            <p class="footer__author"> ©2023 Nazar Pauk</p>
-        </section>
+        <div class="footer__container">
+            <ul class="footer__social-media">
+                <li class="footer__social-btn">
+                    <svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" /><path d="M18 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2Z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M1.654 4.276C1 5.56 1 7.24 1 10.6v2.8c0 3.36 0 5.04.654 6.324a6 6 0 0 0 2.622 2.622C5.56 23 7.24 23 10.6 23h2.8c3.36 0 5.04 0 6.324-.654a6 6 0 0 0 2.622-2.622C23 18.44 23 16.76 23 13.4v-2.8c0-3.36 0-5.04-.654-6.324a6 6 0 0 0-2.622-2.622C18.44 1 16.76 1 13.4 1h-2.8c-3.36 0-5.04 0-6.324.654a6 6 0 0 0-2.622 2.622ZM13.4 3h-2.8c-1.713 0-2.878.002-3.778.075-.877.072-1.325.202-1.638.361a4 4 0 0 0-1.748 1.748c-.16.313-.29.761-.36 1.638C3.001 7.722 3 8.887 3 10.6v2.8c0 1.713.002 2.878.075 3.778.072.877.202 1.325.361 1.638a4 4 0 0 0 1.748 1.748c.313.16.761.29 1.638.36.9.074 2.065.076 3.778.076h2.8c1.713 0 2.878-.002 3.778-.075.877-.072 1.325-.202 1.638-.361a4 4 0 0 0 1.748-1.748c.16-.313.29-.761.36-1.638.074-.9.076-2.065.076-3.778v-2.8c0-1.713-.002-2.878-.075-3.778-.072-.877-.202-1.325-.361-1.638a4 4 0 0 0-1.748-1.748c-.313-.16-.761-.29-1.638-.36C16.278 3.001 15.113 3 13.4 3Z"/></svg>
+                </li>
+                <li class="footer__social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="white"><path d="M17.525 9H14V7c0-1.032.084-1.682 1.563-1.682h1.868v-3.18A26.065 26.065 0 0 0 14.693 2C11.98 2 10 3.657 10 6.699V9H7v4l3-.001V22h4v-9.003l3.066-.001L17.525 9z"/></svg>
+                </li>
+                <li class="footer__social-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="white"><path d="M50.063 10.438a20.57 20.57 0 0 1-5.91 1.62 10.309 10.309 0 0 0 4.523-5.687 20.648 20.648 0 0 1-6.531 2.492 10.258 10.258 0 0 0-7.504-3.246c-5.68 0-10.286 4.602-10.286 10.281 0 .805.094 1.59.27 2.344-8.547-.43-16.121-4.523-21.195-10.746a10.243 10.243 0 0 0-1.39 5.172c0 3.566 1.812 6.715 4.573 8.562a10.274 10.274 0 0 1-4.66-1.289v.13c0 4.984 3.547 9.136 8.246 10.085a10.29 10.29 0 0 1-4.644.172c1.312 4.082 5.11 7.063 9.605 7.145A20.613 20.613 0 0 1 2.39 41.87c-.831 0-1.648-.047-2.449-.144a29.053 29.053 0 0 0 15.762 4.62c18.914 0 29.258-15.667 29.258-29.253 0-.446-.012-.895-.027-1.332a20.904 20.904 0 0 0 5.129-5.325Z"/></svg>
+                </li>
+                <li class="footer__social-btn">
+                    <svg fill="white" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.656 1.029c1.637-.025 3.262-.012 4.886-.025a7.762 7.762 0 0 0 2.189 5.213l-.002-.002A8.77 8.77 0 0 0 29 8.45l.028.002v5.036a13.327 13.327 0 0 1-5.331-1.247l.082.034a15.385 15.385 0 0 1-2.077-1.196l.052.034c-.012 3.649.012 7.298-.025 10.934a9.513 9.513 0 0 1-1.707 4.954l.02-.031c-1.652 2.366-4.328 3.919-7.371 4.011h-.014a9.071 9.071 0 0 1-5.139-1.31l.04.023C5.05 28.185 3.32 25.603 3 22.6l-.004-.041a23.163 23.163 0 0 1-.012-1.862c.49-4.779 4.494-8.476 9.361-8.476.547 0 1.083.047 1.604.136l-.056-.008c.025 1.849-.05 3.699-.05 5.548a4.29 4.29 0 0 0-5.465 2.619l-.009.03c-.133.427-.21.918-.21 1.426 0 .206.013.41.037.61l-.002-.024a4.26 4.26 0 0 0 4.382 3.586h-.009a4.198 4.198 0 0 0 3.451-1.994l.01-.018c.267-.372.45-.822.511-1.311l.001-.014c.125-2.237.075-4.461.087-6.698.012-5.036-.012-10.06.025-15.083z"/></svg>
+                </li>
+            </ul>
+            <a href="" class="logo">
+
+                <span class="logo__text">Saturami</span>
+            </a>
+            <p class="footer__author">Nazar Pauk 2025©</p>
+        </div>
+        <img class="footer__logo-img" src="images/header-logo.png" alt="">
     </footer>
-</div>
-
-
-
 </body>
 </html>

@@ -1,0 +1,9 @@
+.search__button{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border: solid 3px rgb(184, 184, 184);
+    border-left: none;
+    border-radius: 0 25px 25px 0;
+    margin: 0;
+}

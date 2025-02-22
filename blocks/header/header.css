@@ -1,10 +1,39 @@
-.header {
-    height: 100vh;
-    min-height: 600px;
-    max-height: 756px;
+/* За замовчуванням - мобільні пристрої (до 480px) */
+.header{
     display: flex;
-    position: relative;
-    padding:0 0 0 64px ;
-    background-color: #f2f2f2;
-    overflow: hidden;
+    background: black;
+    position:sticky;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    border-bottom: solid .01px white;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+
+
+/* Планшети в портретному режимі (від 481px) */
+@media (min-width: 481px) {
+.header {
+}
+}
+
+/* Планшети в альбомному режимі, маленькі ноутбуки (від 768px) */
+@media (min-width: 768px) {
+.header {
+}
+}
+
+/* Десктопи та великі планшети (від 1024px) */
+@media (min-width: 1024px) {
+.header {
+}
+}
+
+/* Великі екрани (від 1280px) */
+@media (min-width: 1280px) {
+.header {
+}
 }

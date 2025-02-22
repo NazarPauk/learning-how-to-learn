@@ -1,0 +1,7 @@
+.footer__logo-img{
+    position: absolute;
+    width: 450px;
+    bottom: -200px;
+    z-index: 0;
+    opacity: .5;
+}
